@@ -1,0 +1,53 @@
+
+
+.btn{
+    &,
+    &:link,
+    &:visited{
+        padding: 1rem 4rem;
+        cursor: pointer;
+        text-decoration: none;
+        border: 0px;
+        border-radius: 10rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+    }
+
+    &-white{
+            background-color: $color-white;
+            color: $color-grey-dark;
+
+       &::before{
+        content: '';
+        background-color: $color-white;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 10rem;
+        transition: all .4s;
+       }     
+    }
+        &:hover,
+        &:focus{
+            transform: translateY(-0.5rem);
+            box-shadow: 0 1rem 2rem rgba($color-dark, .2);
+
+            &::before{
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &:active{
+            transform: translateY(-0.1rem);
+            box-shadow: 0 .5rem 1rem rgba($color-dark, .2);
+        }
+
+
+}

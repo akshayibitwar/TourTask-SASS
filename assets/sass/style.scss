@@ -1,0 +1,24 @@
+//..@==>Directives : which gives the instruction to DOM Elements.
+
+@import"./abstract/variables";
+@import"./abstract/mixings";
+@import"./abstract/functions";
+
+@import"./base/animation";
+@import"./base/utility";
+@import"./base/base";
+@import"./base/typoghraphy.scss";
+
+@import"./component/blogcards";
+@import"./component/button";
+@import"./component/form";
+
+@import"./layout/header";
+@import"./layout/grid";
+@import"./layout/footer";
+ 
+@import"./pages/home";
+@import"./pages/contact";
+@import"./pages/bolgs";
+@import"./pages/service";
+@import"./pages/aboutus";
